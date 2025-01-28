@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="GeneralPlc" Id="{40442ba5-5468-42d6-b755-fa74013c25b0}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM GeneralPlc
+VAR
+END_VAR
+(* End *)]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[(* General *)
+
+(* Led on/off *)
+
+	bLedPF14 := bSwitchSF14;
+	
+	bLedPF15 := bSwitchSF15;
+	
+	bLedPF22 := bSwitchSF22;
+	
+	bLedPF25 := bSwitchSF25;
+
+(* End *)]]></ST>
+    </Implementation>
+    <LineIds Name="GeneralPlc">
+      <LineId Id="3" Count="2" />
+      <LineId Id="14" Count="0" />
+      <LineId Id="11" Count="0" />
+      <LineId Id="17" Count="3" />
+      <LineId Id="16" Count="0" />
+      <LineId Id="6" Count="1" />
+      <LineId Id="2" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>
